@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <TextView
+    android:id="@+id/tvTitulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="@string/label_titulo"
+    android:layout_marginTop="16dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTituloBovespa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="BOVESPA"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvTitulo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvLabelIndiceBovespa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Índice: "
+        android:layout_below="@+id/tvTituloBovespa"/>
+
+    <TextView
+        android:id="@+id/tvValorIndiceBovespa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLabelIndiceBovespa"
+        android:layout_toRightOf="@+id/tvLabelIndiceBovespa"/>
+
+    <TextView
+        android:id="@+id/tvLabelCotacaoBovespa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Variação: "
+        android:layout_below="@+id/tvValorIndiceBovespa"/>
+
+    <TextView
+        android:id="@+id/tvValorVariacaoBovespa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLabelCotacaoBovespa"
+        android:layout_toRightOf="@+id/tvLabelCotacaoBovespa"/>
+
+    <TextView
+        android:id="@+id/tvTituloDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DOLAR"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvValorVariacaoBovespa"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvLabeCotacaoDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cotação: "
+        android:layout_below="@+id/tvTituloDolar"/>
+
+    <TextView
+        android:id="@+id/tvValorCotacaoDolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLabeCotacaoDolar"
+        android:layout_toRightOf="@+id/tvLabeCotacaoDolar"/>
+
+    <TextView
+        android:id="@+id/tvLabelVariacaoDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Variação: "
+        android:layout_below="@+id/tvValorCotacaoDolar"/>
+
+    <TextView
+        android:id="@+id/tvValorVariacaoDolar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLabelVariacaoDolar"
+        android:layout_toRightOf="@+id/tvLabelVariacaoDolar"/>
+
+    <TextView
+        android:id="@+id/tvTituloEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="EURO"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvValorVariacaoDolar"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvLabeCotacaoEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cotação: "
+        android:layout_below="@+id/tvTituloEuro"/>
+
+    <TextView
+        android:id="@+id/tvValorCotacaoEuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLabeCotacaoEuro"
+        android:layout_toRightOf="@+id/tvLabeCotacaoEuro"/>
+
+    <TextView
+        android:id="@+id/tvLabelVariacaoEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Variação: "
+        android:layout_below="@+id/tvValorCotacaoEuro"/>
+
+    <TextView
+        android:id="@+id/tvValorVariacaoEuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLabelVariacaoEuro"
+        android:layout_toRightOf="@+id/tvLabelVariacaoEuro"/>
+
+    <Button
+        android:id="@+id/btAtualizarCotacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvValorVariacaoEuro"
+        android:text="Atualizar Cotações"/>
+
+
+</RelativeLayout>
